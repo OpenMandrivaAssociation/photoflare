@@ -12,6 +12,7 @@ BuildRequires:  desktop-file-utils
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  pkgconfig(GraphicsMagick)
 BuildRequires:  qmake5
+BuildRequires:  rpm-helper
 
 %description
 Quick, simple but powerful Cross Platform image editor.
