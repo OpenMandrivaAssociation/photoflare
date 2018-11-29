@@ -22,7 +22,7 @@ Quick, simple but powerful Cross Platform image editor.
 
 %build
 
-%qmake-qt5 PREFIX=/usr PhotoFlare.pro
+%qmake PREFIX=/usr PhotoFlare.pro
 make
 
 %install
