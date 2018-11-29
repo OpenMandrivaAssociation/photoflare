@@ -11,6 +11,7 @@ BuildRequires:  qt5-qtbase-devel
 BuildRequires:  desktop-file-utils
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  pkgconfig(GraphicsMagick)
+BuildRequires:  qmake5
 
 %description
 Quick, simple but powerful Cross Platform image editor.
@@ -20,7 +21,7 @@ Quick, simple but powerful Cross Platform image editor.
 
 %build
 
-%cmake
+%qmake-qt5 PREFIX=/usr PhotoFlare.pro
 make
 
 %install
