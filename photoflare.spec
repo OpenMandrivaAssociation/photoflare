@@ -21,12 +21,11 @@ Quick, simple but powerful Cross Platform image editor.
 %setup -q
 
 %build
-
-%qmake PhotoFlare.pro
-make %{?_smp_mflags}
+%qmake_qt5
+%make_build
 
 %install
-%cmake_install
+%make_install
 
 %files
 %{_bindir}/%{name}
