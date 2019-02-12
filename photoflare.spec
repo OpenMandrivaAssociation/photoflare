@@ -14,6 +14,8 @@ BuildRequires:  pkgconfig(GraphicsMagick)
 BuildRequires:  qmake5
 BuildRequires:  rpm-helper
 BuildRequires:  qt5-qttools
+BuildRequires:  qt5-qttranslations
+BuildRequires:  qt5-linguist-tools
 
 %description
 Quick, simple but powerful Cross Platform image editor.
