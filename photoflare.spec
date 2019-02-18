@@ -29,7 +29,7 @@ Quick, simple but powerful Cross Platform image editor.
 
 %install
 mkdir -p %{buildroot}%{_bindir}
-%make_install
+%make_install INSTALL_ROOT=%{buildroot}
 
 %files
 %{_bindir}/%{name}
