@@ -13,6 +13,9 @@ BuildRequires:  hicolor-icon-theme
 BuildRequires:  pkgconfig(GraphicsMagick)
 BuildRequires:  qmake5
 BuildRequires:  rpm-helper
+BuildRequires:  qt5-qttools
+BuildRequires:  qt5-qttranslations
+BuildRequires:  qt5-linguist-tools
 
 %description
 Quick, simple but powerful Cross Platform image editor.
@@ -21,12 +24,18 @@ Quick, simple but powerful Cross Platform image editor.
 %setup -q
 
 %build
-
-%qmake PhotoFlare.pro
-make %{?_smp_mflags}
+%qmake_qt5 PREFIX=/usr
+%make_build
 
 %install
-%cmake_install
+mkdir -p %{buildroot}%{_bindir}
+%make_install INSTALL_ROOT=%{buildroot}
 
 %files
 %{_bindir}/%{name}
+%{_datadir}/applications/%{name}.desktop
+%{_iconsdir}/hicolor/*/apps/photoflare.png
+%{_mandir}/man1/%{name}.1.xz
+%{_datadir}/metainfo/io.%{name}.%{name}.appdata.xml
+%{_datadir}/%{name}/languages/*.qm
+%{_datadir}/pixmaps/%{name}.png
