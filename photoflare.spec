@@ -24,7 +24,7 @@ Quick, simple but powerful Cross Platform image editor.
 %setup -q
 
 %build
-%qmake_qt5
+%qmake_qt5 PREFIX=/usr
 %make_build
 
 %install
