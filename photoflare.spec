@@ -28,6 +28,7 @@ Quick, simple but powerful Cross Platform image editor.
 %make_build
 
 %install
+mkdir -p %{buildroot}%{_bindir}
 %make_install
 
 %files
