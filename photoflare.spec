@@ -31,6 +31,9 @@ Quick, simple but powerful Cross Platform image editor.
 mkdir -p %{buildroot}%{_bindir}
 %make_install INSTALL_ROOT=%{buildroot}
 
+# We dont need this:
+rm -rf %{buildroot}%{_datadir}/pixmaps/photoflare.png
+
 %files
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
