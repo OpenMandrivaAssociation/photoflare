@@ -1,5 +1,5 @@
 Name:           photoflare
-Version:        1.5.8.1
+Version:        1.5.9
 Release:        1
 Summary:        Quick, simple but powerful Cross Platform image editor.
 License:        GPL3
