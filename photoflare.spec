@@ -6,6 +6,7 @@ License:        GPL3
 Group:          Graphics
 URL:            http://photoflare.io/
 Source0:        https://github.com/PhotoFlare/%{name}/archive/v%{version}/%{name}-%{version}.tar.gz
+Patch0:		photoflare-1.6.0-no-Lusrlib.patch
 BuildRequires:  qt5-devel
 BuildRequires:  qt5-qtbase-devel
 BuildRequires:  desktop-file-utils
@@ -21,7 +22,7 @@ BuildRequires:  qt5-linguist-tools
 Quick, simple but powerful Cross Platform image editor.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %qmake_qt5 PREFIX=/usr
