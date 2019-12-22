@@ -1,6 +1,6 @@
-diff -up photoflare-1.6.0/PhotoFlare.pro.omv~ photoflare-1.6.0/PhotoFlare.pro
---- photoflare-1.6.0/PhotoFlare.pro.omv~	2019-09-29 17:06:41.343777427 +0200
-+++ photoflare-1.6.0/PhotoFlare.pro	2019-09-29 17:07:06.889172347 +0200
+diff -up photoflare-1.6.1.0/Photoflare.pro photoflare-1.6.1.0/Photoflare.pro.omv
+--- photoflare-1.6.1.0/Photoflare.pro   2019-12-22 15:07:38.149332739 +0100
++++ photoflare-1.6.1.0/Photoflare.pro.omv       2019-12-22 15:07:50.408352798 +0100
 @@ -29,7 +29,7 @@ win32 {
  # Project settings for Linux and Hurd. Adjust the paths as needed on your system.
  linux|hurd {
@@ -10,3 +10,4 @@ diff -up photoflare-1.6.0/PhotoFlare.pro.omv~ photoflare-1.6.0/PhotoFlare.pro
      QMAKE_CXXFLAGS += -fopenmp
      LIBS += -fopenmp
  }
+
