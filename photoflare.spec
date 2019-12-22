@@ -27,6 +27,7 @@ Quick, simple but powerful Cross Platform image editor.
 %build
 export CC=gcc
 export CXX=g++
+%global ldflags %{ldflags} -fuse-ld=gold
 %qmake_qt5 PREFIX=/usr
 %make_build
 
