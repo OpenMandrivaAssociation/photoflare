@@ -25,6 +25,8 @@ Quick, simple but powerful Cross Platform image editor.
 %autosetup -p1
 
 %build
+export CC=gcc
+export CXX=g++
 %qmake_qt5 PREFIX=/usr
 %make_build
 
