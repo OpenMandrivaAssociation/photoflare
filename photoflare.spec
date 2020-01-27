@@ -1,12 +1,11 @@
 Name:           photoflare
-Version:        1.6.1.0
+Version:        1.6.2
 Release:        1
 Summary:        Quick, simple but powerful Cross Platform image editor.
 License:        GPL3
 Group:          Graphics
 URL:            http://photoflare.io/
 Source0:        https://github.com/PhotoFlare/%{name}/archive/v%{version}/%{name}-%{version}.tar.gz
-Patch0:		photoflare-1.6.0-no-Lusrlib.patch
 BuildRequires:  qt5-devel
 BuildRequires:  qt5-qtbase-devel
 BuildRequires:  desktop-file-utils
