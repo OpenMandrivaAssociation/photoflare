@@ -38,7 +38,7 @@ rm -rf %{buildroot}%{_datadir}/pixmaps/photoflare.png
 %{_bindir}/%{name}
 %{_datadir}/applications/%{name}.desktop
 %{_iconsdir}/hicolor/*/apps/photoflare.png
-%{_mandir}/man1/%{name}.1.xz
+%{_mandir}/man1/%{name}.1.*
 %{_datadir}/metainfo/io.%{name}.%{name}.appdata.xml
 %{_datadir}/%{name}/languages/*.qm
 #{_datadir}/pixmaps/%{name}.png
