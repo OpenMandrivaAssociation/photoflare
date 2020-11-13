@@ -1,6 +1,8 @@
+%global debug_package %{nil}
+
 Name:           photoflare
 Version:        1.6.5
-Release:        1
+Release:        2
 Summary:        Quick, simple but powerful Cross Platform image editor.
 License:        GPL3
 Group:          Graphics
