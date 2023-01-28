@@ -2,7 +2,7 @@
 %define _empty_manifest_terminate_build 0
 
 Name:           photoflare
-Version:        1.6.11
+Version:        1.6.12
 Release:        1
 Summary:        Quick, simple but powerful Cross Platform image editor.
 License:        GPL3
